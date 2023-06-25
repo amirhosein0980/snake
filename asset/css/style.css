@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 128, 0, 0.6), rgba(0, 94, 128, 0.75));
+}
+
+/*Game area numbers and icons*/
+.div-snake {
+    width: 50%;
+    height: 510px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    width: 63px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: IRANSansWeb;
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+}
+
+.snake {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.snake1 {
+    left: 262px;
+    top: 77px;
+    transform: rotateZ(359deg);
+}
+
+.snake2 {
+    left: 506px;
+    top: 281px;
+    transform: rotateZ(97deg);
+}
+
+.snake3 {
+    left: 124px;
+    top: 387px;
+    transform: rotateZ(86deg)
+}
+
+.snake4 {
+    left: 215px;
+    top: 227px;
+    transform: rotateZ(5deg);
+}
+
+.ladder {
+    position: absolute;
+    width: 65px;
+}
+
+.ladder1 {
+    left: 441px;
+    top: 74px;
+}
+
+.ladder2 {
+    left: 92px;
+    top: 162px;
+    transform: rotateZ(198deg)
+}
+
+.bx-body {
+    position: absolute;
+    color: white;
+    z-index: 999;
+    font-size: 50px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/*Button and counterpart*/
+.dice {
+    width: 20%;
+    height: 90vh;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    margin: 20px auto;
+    padding: 20px 0;
+    font-family: IRANSansWeb;
+}
+
+button {
+    width: 110px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: orange;
+    font-family: IRANSansWeb;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 170px;
+}
+
+.lottery-number {
+    color: white;
+    font-size: 50px;
+}
